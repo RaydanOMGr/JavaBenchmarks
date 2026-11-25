@@ -31,9 +31,9 @@ tasks.jmh {
     resultFormat = "JSON"
     resultsFile = project.layout.buildDirectory.file("reports/jmh/results.json")
     warmupIterations = 3
-    iterations = 8
-    fork = 0
+    iterations = 5
+    fork = 3
     timeOnIteration = "5s"
     warmup = "5s"
-    threads = 1
+    threads = 4
 }
